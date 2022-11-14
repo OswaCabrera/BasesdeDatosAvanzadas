@@ -1,0 +1,88 @@
+create or replace procedure  spv_valida_db_info wrapped 
+a000000
+367
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+7
+10b9 676
+EQXLvAbUXpaS6sVVJyKbQRrPOMgwg5BUBUgFVy9Vwc9ED56DAquF3rZW8S77MeBFg7Tx6pwO
+KW3dhVngZ2/t8WhRbeRHPxVRIPjsLAWobJN4e5+eNucu/3RyrXb/UEGY/0Z1NwxpYfmrP2MI
+wDVqlUxTWbk6cBzsht3v0UV/aPq7QBJloqcHSi/sNkhXUn6WdZI55hk7H0VdnhsAxu2pQxOl
+cqlTxLrEr1tMsQeVl9u9fiwxr35Z3Svck2HB/TNGRmF/7w3rfdj1f8ZrKUd02eKx3NIjLkcw
+2yBXQadt4XUg1+dGT9cTEZcyLTOVLaF9cUwN7yEV0LD/XXvS2JYUdpqS29UtKNwNl4UIy3zA
+9Cl2cIvavH9E98nH3QH4W1RGA1IBISUNtyUnyc/ieXsVvLGNYBsIGw2zMVtjzPaC88ERWSKT
+M8yGd3KW8/9UR1F26c+3XdbEhKBZwEr/sdDv9U+blFFSdovS0cmIkjOFCUBdB3xr1UDRAlW9
+24Qhk8r5Yjjef/4cmWelgCK3oY+2kdfJ26B0BFy6umG7fsdWpVb4thXo7v0Lau/IyerLPKw6
+dt3qWGKtI04TUKWPtyQETKcZg1oKYLSLFgvjbPOum9I6Wxgm2wyzrBWq7H9Cut1nqWBWYFb4
+9morju6wsBlgxx9nQP+BpviXBMC2RQ4wMAjyzDh4w3n+0kbQuvdjnwe9Sf55J+Gb/lz3cRIl
+pjqJAFYDepRxJ2Or8tJrPqA1jMluCbaIwA8UbNfyRcS6Y5/GyNvyAKONofbDZjuTQqDcY7Mj
+jWNp9oA1s4mUogXMZfxpVeYOPvbW6OVE7Py5sfeY6rw0v/BufW/NJjKyxZ2+ulCz/djumqf6
+ZaMJU5oslY48RQlRxRArv7j4H3TArdne4SJ88UxaWG/F+BWScXYnF5w4eLcIc5swHek5D9/Q
+wNoFe3B+m5RLj+FyTiSYplxg865eWnz7Hb12BVcQdNTSc6GPD3MYlrrNDAofg/pcFoHGQAC4
+NXpRPvDATViIygphXDVeQiFwpxbZTCN8mNe2krzN47wAkCcEFME+8lfy33/G7dKA/INpMDv7
+spe8Fzi8cX9Xaj2jRLwBaVF5eVGmaM2LpwDdu9Lrx0wHX8+wT/SvadWwL4BDw6i4tZfgwfki
+CzrZwQ+DqZdpXfmLvenQemM+GgGA/Nz1RM89XobvJcxseF/ZR2mcNs/v1/waFhpAGHSrJcGq
+AdFolXajt02MEX7gAV78g5cWCwMuWkz6jtjDIO9E1Vz75IgrMX8kP0RiOBnv6N1Ryug/cj5N
+7WmVD4Tc4lN07HBHLMLquIkiXqUp81xmXkzYuRPDr8KxXzMvWUG1ui2gTa7PDYu9DMCTJY/U
+xlD8jXTNENyUA9HsHVr0nM37NKKAVYTwAfarNa6FrQ7Tob33QqCTbVtHq3HgQSruCuPxZaLu
+VkoJOVpFvJjO4fJEAZW/rGCTgBhF4jCtIfqZA5KiChl2eC8VfPNt1ZKkigwBw19JlpjDovip
+M5uJD/aHlQM/dIEwGFva2VH1vkqnciTxTwH2uUprycXKzQHl/4/i12spul2HHuWU2zNJfoCU
+KWOLbE71+FPYhlWFLGaeEGd3FhndxsLCLPMFNM5DqmVTL+E=
+
+/
+show errors
+create or replace procedure spv_elimina_usuario wrapped 
+a000000
+367
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+7
+174 175
+8lGcpv+9ekyobEcbdK48VOMsW5Iwg1zIfyDWfC8C2k7VGTkpabNK6aJluD6n4ITwkGG3AuEd
+CatmL5DOCDIRogWvmyncuxK74sPp8ljMRgibAQVe/jGQ9trwXgD1EGmjXojoMDcdXt7/d+s5
+NJup1hAqGiI8n6UEQBMRiBoC96sl40bDXWzSFUMsr8d0nYiSmegtpI9yTid/ciJKgTDYEzyd
+8cWDXuUtj6wSwdUyLQYtXgJnp3ywG1zuYknEFQ2nWS/gdcIUgROq+tS/Cj9tL3uw9mVXX01+
+OPXe0tYSn3JsRCIGVxmsP9HASCN3SWi5m5b+rDl9kAmMvXHnl1fHPXlD50jcZccz98H5fbn9
+uOoXiQ==
+
+/
+show errors
+Prompt realizando limpieza
+exec spv_elimina_usuario('&&p_nombre'||'0201');
+Prompt Invocando scripts del ejercicio
+@s-01-database-info.sql
+pause Script invocado. Presionar ENTER para comenzar la validación o Ctrl +C para cancelar.
+set serveroutput on
+whenever sqlerror exit rollback
+exec spv_print_header
+host sha256sum &&p_script_validador
+exec spv_valida_db_info('&&p_nombre'||'0201');
+exec spv_remove_procedures
+whenever sqlerror continue none
+exit

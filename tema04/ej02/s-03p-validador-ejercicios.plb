@@ -1,0 +1,57 @@
+whenever sqlerror exit rollback
+create or replace procedure spv_check_tables wrapped 
+a000000
+369
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+7
+138e 54e
+YLzu0+SYA5WLLsLwOuyQ7hsLA5Awg1XqVUiDWo4Z9kEGTQkBVJPzFDETCWaIS6sKr2naDs09
+EXy3cD0tk9AuPRicMdkQAu3XbYG01qpLBxRnlCbphcIXi+TPwdoX/0fbqyjS7nclN2Q825Nl
+wZn0fWgLNK2oXrrEWXkaalkDObHsMhnhakghpsld68PEIsGG152DzSt4kHXeeF6kRylNZLpM
+LZ+0SXMTCI+MLjmDj0V1WYs5C+vfirpVNI1Z3OIkBdRnmPf6bO9dg1Nsp98h1AKvvPmvfFK9
+ISWdAFjz12B2TarPgqRYn72xyYxu6c3Lk0f6eryYC6hSFkBnzLZCaYuHqbOPub/oe1IEZSTT
+LOBi6u+rGQPjkU8KyDuVrNJi/dwyYrSk8O3j2KzdDLEWV25gVlK44IjjquQtJn16ngtJGISe
+3KkbkOMVGAacR9fDHPL1NB43FVgHCRak+MxOcm9TP47dmD3CHb84paaXyU56+aJk+cQidRn8
+cF9gklBQpWIDrLxKglFeQG0EeNrtzUaDzAN4lc/ktTcC+zn75p+7ZtupjA+6qc75jhUf6zCH
+8YuaV9AR24Ibt1hGWdzIfNzxWueZ5bbOdgDyUzvcO6eaUx5p0EZf0TBhIkLxY/33yNFoj7ir
+Y0ieboHIF34cQ6qec2zKGHbMCFJBetHxxgHlOCAZWveRMcwmQu5Z7Wg9J/cKDSW53/wNaNiI
+UycKnnE1usz+tCvJd5kVCYMA6YUxGaltUQrz0Ym75RkKHf/lJGwyUgMmOtE+qckAGAGlDecs
+Nz+qCaSmqp3TtCid/O12tUiXibPq8SnnisKsraYNWTT/v0SB4rEHfiMfVK/54R2YDvPXn9q/
+a0iAUv3Ac/hqeCZMDTtIhl0bAwoIRjnr1A+zkfFkNLPn0pbN32VflpmSAa0gfN7ghxjPjqKF
+Im/5JH+G5XUrMavZj+PJqC2J2iPnLAVZ1al+W10RypBzRZGoHZbOlxXopZ1EQfgCbCNyUpX7
+FBV330coDjQypduimsVVwSiyB7j6ei/LFROohgrOCCTLJmN4GBRoyeS4OSviLhHIbWrrARMj
+kgxOLehKDGrqqDZsRiqKbcqPpK7QWYiKjEnaIuQYNgJHgUzGsieOlBJw+EkJXTXJpY5I8qOP
+xGKkByJHbDT1GcGxQdV9FiSN/TjTe7BSt/Y68L6vjEkZYT6q6SOP4cADSXl+AQC4djXaF8jq
+OL2mcglLjX1sH4XrJl6USdibvzq86i+0mNjTTRKtUq42KsBYcsozLQfjba+SCA9yTDat7Y7Q
+105XqNT3eCb536BHcnzalelnELy5FHH8i0v4xiitt71H
+
+/
+show errors
+Prompt Realizando limpieza..
+exec spv_drop_user('&&p_nombre'||'0402');
+Prompt invocando script s-00-crea-usuario.sql
+start s-00-crea-usuario.sql
+Prompt Invocando s-01-datos-db-buffer.sql
+start s-01-datos-db-buffer.sql
+Prompt Invocando s-02-random-data.sql
+start s-02-random-data.sql
+set serveroutput on 
+exec spv_print_header
+host sha256sum &&p_script_validador
+exec spv_check_tables('&&p_nombre'||'0402');
+exec spv_print_ok('Validación concluida');
+exit

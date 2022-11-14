@@ -1,0 +1,16 @@
+ocpbda2.__data_transfer_cache_size=0
+ocpbda2.__db_cache_size=213909504
+ocpbda2.__inmemory_ext_roarea=0
+ocpbda2.__inmemory_ext_rwarea=0
+ocpbda2.__java_pool_size=4194304
+ocpbda2.__large_pool_size=20971520
+ocpbda2.__oracle_base='/u01/app/oracle'#ORACLE_BASE set from environment
+ocpbda2.__pga_aggregate_target=322961408
+ocpbda2.__sga_target=482344960
+ocpbda2.__shared_io_pool_size=16777216
+ocpbda2.__shared_pool_size=209715200
+ocpbda2.__streams_pool_size=0
+ocpbda2.__unified_pga_pool_size=0
+*.control_files='/unam-bda/d01/app/oracle/oradata/OCPBDA2/control01.ctl','/unam-bda/d02/app/oracle/oradata/OCPBDA2/control02.ctl','/unam-bda/d03/app/oracle/oradata/OCPBDA2/control03.ctl'
+*.db_name='ocpbda2'
+*.memory_target=768M

@@ -1,0 +1,88 @@
+whenever sqlerror exit rollback
+create or replace procedure spv_clean wrapped 
+a000000
+369
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+7
+134 f3
+RO736yl2XvyJKpkEUyDQzPhIkfEwg/BHLZ4VfC+pOMEi6WFhjw49O+sqvmE3dZm/3q8pL1K2
+8zZPD3g1Npi1mk91VkX0s3q5rgAPlrC6jfXTXedbIYJLpDcTgzB/6QfW0AJ/8ckyWaGC9fsK
+ZSBhl31aHbKDLhDQceIknEVz3quN/quQG1FLDprepaQdLD2spMyAlkL7BfarZ2yEp7Uq8ivg
+B8xipNNqnBZ8RZ+B4V3pww0=
+
+/
+show errors
+create or replace procedure spv_check_tables wrapped 
+a000000
+369
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+7
+13dd 625
+qZc+9pwJGID4B+OJPZSxvPlK6Ocwg5XqVcD83y+5MkHgu3SksgvnrR9JbILLFj5e3Xdn6LB4
+qziipSYtJn4lt9yHi3EzlCMTHwpdLC/KThNYyWXhoJuwVSAkOzwQxkgGPIWvL2KH49oLuSwU
+6AtP6WMiiLJL6wNFBEFWsDoDQ3eXUBxxTPt69w+AtDrC7JZVdck63396k5DzQBlNEtCQBfXN
+Z1avYiXEzcspuko9TFjEO9aAbaASKJ/u4Vsog50LHrwDMybD18QrH9/NSJq57hnIdM1rPT42
+z7h8G0w0nyn8HCRhEuCkcWy11vm2LTms42vdil9F7TfmRwUTzIjsXO4r2Ruk+Pdo0BwcSwvK
+OnoEbi7mZYfcsF+3hfgT90RD9dyLC6A4Qujbmeg4e5axofmy+/fbbKR92nnz9HMM+t3MR5xI
+NF2OaMjHi9SOFMXbFfA2PShPgpHvQhyJzxBIqfN/D3psQYc5UinGZTA1dhXBldieXhz/r1px
+qhIFdAkH0a8IIFOtq+ARv5hTPWHbxM/V7kuQ2aizr+yFCQ33iGmUQ5oJ1CO7tf+IKDgVqQMX
+rjb9YBVqVsMIEKrYE3Her8uENWz42SaFcVZJOHbv9LTY9xFgRNGTRmtP2TVYo9U1kHfVqBCr
+Z0wpQE7pBEvKG1IEXqodAZeI78ffKDoeKWaD9XqyQnj6vuPRGH1fMDzg6eBN+u6jyzIUSSDK
+ry4BNAqP11DAN7mOSRqWoSZy6T3nzTsiWg/HSGSfbVmhhsxqohslQuyX/PSSqOrL9N+NlEzl
+9Qcb6dqkmWFyR0qY7E5eJccQF2Ydud0hM4sGX92UrT+iip52jtRB2juZqne7C7DDFOXAas6s
+WznyxuYpkObUbZJtFsTXWH6O7pTCa6K/acu6sFrlBkiAtgWAzc/fYSfISvGLOriVBwvVrGo0
+XYGErlpI7an0NAY/X8XAIWk+BHuMhwPK0cPVDNNKvH5k9LvwrUNk22NR1myCUj3Bv+J48/5K
+LCWhRjSPApIZRtSHBKLnb0EElXxOBuS3DBNSgwImVc+NaigRNPX93Q+C1IgwtvsJ5VGrRWCB
+m6GyMUA0/Ao/2Lz8xhijLZz+u6zbL1TIzgr+ZOFi38n7SyAGB8ZrvLOpRBUI5+Vnaz/ABWHQ
+n6nteRMbH/KDJBuksk2QT0B+M0kDwNZ0rasefhrG3GnxzcvA/v6qZ1MoJrVOQwr1WJKtoUdb
+M41SsccCXMIc9ODb4bGM80sWP7UcEtGUW6jH+IUDvA2qqOIzoLCvGsb4m0aRtsaRQ5IG2GhY
+ja7CaEGcjX9zI6Ir+XFlVGAhqQKuTN+Zc72Gs0L0NcXiaGACRnNCreL8PPrmoCTMWQs3nFwF
+rXOnRxhIDz/biSQDV/bzTPyYox2UAo2SJYmpFJ9CC8VA6SUR9wHbYRuNv9ayqUQoTG/pFD5h
+sJ1EPi3NO0PpNUEaTDIDbVyjggFeymALHtd7nOWWNmart+CxAuC2vhwKmGrjjYSWd8Z8mJf4
+tdR5M6uf0yblsa15nLaYYGIUb/6jxCTkW/HdLiU=
+
+/
+show errors
+Prompt Realizando limpieza..
+exec spv_clean('&&p_nombre'||'0403');
+Prompt invocando script s-01-redo-log-buffer.sql
+start s-01-redo-log-buffer.sql
+Prompt invocando script s-02-shared-pool.sql
+start s-02-shared-pool.sql
+Prompt invocando script s-03-pga-stats.sql
+start s-03-pga-stats.sql
+set serveroutput on
+set linesize window
+exec spv_print_header
+host sha256sum &&p_script_validador
+exec spv_check_tables('&&p_nombre'||'0403');
+exec spv_print_ok('Validación concluida');
+exit

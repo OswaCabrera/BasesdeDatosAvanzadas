@@ -15,7 +15,33 @@ whenever sqlerror exit rollback;
 Prompt conectando como usuario sys en modo dedicated
 connect sys/system2 as sysdba
 
-create table oswaldo0501.t01_session_data as (
-  select 1 id, ,
+alter session set nls_date_format='dd/mm/yyyy hh24:mi:ss';
 
+create table oswaldo0501.t01_session_data as (
+  select 1 id, sid, logon_time, username, status, server, osuser, machine, type, process, port from v$session
+  where username='SYS' and type='USER'
 );
+
+commit;
+
+disconnect
+
+connect sys@ocpbda2_dedicated/system2 as sysdba
+
+insert into oswaldo0501.t01_session_data 
+  (id, sid, logon_time, username, status, server, osuser, machine, type, process, port)
+  select 2 id, sid, logon_time, username, status, server, osuser, machine, type, process, port from v$session
+  where username='SYS' and type='USER';
+
+commit;
+
+connect sys@ocpbda2_shared/system2 as sysdba
+
+insert into oswaldo0501.t01_session_data 
+  (id, sid, logon_time, username, status, server, osuser, machine, type, process, port)
+  select 3 id, sid, logon_time, username, status, server, osuser, machine, type, process, port from v$session
+  where username='SYS' and type='USER';
+
+commit;
+
+
